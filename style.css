@@ -1,11 +1,12 @@
 body {
+    background-image: url('image.png');
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-image: url('image.png');
+
     background-size: cover;
     color: #fff;
     padding: 20px;
