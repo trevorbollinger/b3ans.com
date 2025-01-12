@@ -1,28 +1,29 @@
-
 <!DOCTYPE html>
 <html>
 <head>
     <title>beans</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body, html {
-  height: 100%;
-  margin: 0;
-}
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
 
-.bg {
-
-  background-image: url("wide.jpg");
-  height: 100%;
-  width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-</style>
+        .bg {
+            height: 100%;
+            width: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
 </head>
 <body>
-<div class="bg"></div>
+    <div class="bg" id="random-bg"></div>
+    <script>
+        const images = ["wide.jpg", "audra.gif", "beans.png", "nex.jpg", "wide.jpg"];
+        const randomImage = images[Math.floor(Math.random() * images.length)];
+        document.getElementById("random-bg").style.backgroundImage = `url(${randomImage})`;
+    </script>
 </body>
 </html>
