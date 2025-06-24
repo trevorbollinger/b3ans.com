@@ -16,10 +16,24 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
+
+        .large-horse-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        .large-horse-button img {
+            display: block;
+        }
     </style>
 </head>
 <body>
     <div class="bg" id="random-bg"></div>
+    <div class="large-horse-button">
+        <a href="http://large.horse"><img src="http://large.horse/button.gif"></a>
+    </div>
     <script>
         const images = ["audra.gif", "beans.png", "nex.jpg", "wide.jpg", "kylar.jpg", "kylar.jpg"];
         const randomImage = images[Math.floor(Math.random() * images.length)];
